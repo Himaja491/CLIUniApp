@@ -92,7 +92,7 @@ def remove_student():
     students = db.load_students()
 
     if not students:
-        print("No students to remove.")
+        print("two students to remove.")
         return
 
     student_id = input("Enter the ID of the student to remove: ").strip()
