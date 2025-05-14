@@ -16,6 +16,10 @@ class Student:
 
     def is_passed(self):
         return self.calculate_average() >= 50
+    
+    def get_grade_string(self):
+        return ", ".join(subject.grade for subject in self.subjects)
+
 
     def __str__(self):
         subject_info = "\n".join(str(subj) for subj in self.subjects)
