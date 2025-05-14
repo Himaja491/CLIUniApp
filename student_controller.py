@@ -1,11 +1,12 @@
 # student_controller.py
 import re
+from admin_controller import CYAN, GREEN
 from database import Database
 from student import Student
 from subject import Subject
 def student_menu():
     while True:
-        print("\nStudent System: (l/r/x): ")
+        print(f"{CYAN}\nStudent System: (l/r/x): ")
 
         choice = input("Enter your choice: ").strip().lower()
 
@@ -50,7 +51,7 @@ def register_student():
     print("Registration successful!")
 
 def login_student():
-    print("\n[Student Login]")
+    print(f"{GREEN}\nStudent Sign In")
     email = input("Enter your email: ").strip()
     password = input("Enter your password: ").strip()
 

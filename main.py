@@ -1,6 +1,6 @@
 # main.py
 from student_controller import student_menu
-from admin_controller import admin_menu
+from admin_controller import CYAN, admin_menu
 from database import Database 
 import re
 
@@ -9,7 +9,7 @@ def university_menu():
     db.initialize_file()
     while True:
         try:
-            print("\nUniversity System : (A)dmin, (S)tudent, or X:")
+            print(f"{CYAN}\nUniversity System : (A)dmin, (S)tudent, or X:")
             choice = input("Enter your choice: ").strip().upper()
             
             if choice == 'A':
